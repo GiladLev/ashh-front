@@ -28,30 +28,30 @@ export default function BottomTabNavigator() {
       <BottomTab.Screen
         name="Home"
         component={TabOneNavigator}
-        // options={{
-        //   tabBarIcon: ({ color }) => <Entypo name="home" size={30} style={{ marginBottom: -3 }} color={color} />,
-        // }}
+        options={{
+          tabBarIcon: ({ color }) => <Entypo name="home" size={30} style={{ marginBottom: -3 }} color={color} />,
+        }}
       />
       <BottomTab.Screen
         name="Search"
         component={TabTwoNavigator}
-        // options={{
-        //   tabBarIcon: ({ color }) => <EvilIcons name="search" size={30} style={{ marginBottom: -3 }} color={color} />,
-        // }}
+        options={{
+          tabBarIcon: ({ color }) => <EvilIcons name="search" size={30} style={{ marginBottom: -3 }} color={color} />,
+        }}
       />
       <BottomTab.Screen
         name="Your Library"
         component={TabTwoNavigator}
-        // options={{
-        //   tabBarIcon: ({ color }) => <MaterialCommunityIcons name="library-music-outline" size={30} style={{ marginBottom: -3 }} color={color} />,
-        // }}
+        options={{
+          tabBarIcon: ({ color }) => <MaterialCommunityIcons name="library" size={30} style={{ marginBottom: -3 }} color={color} />,
+        }}
       />
       <BottomTab.Screen
         name="Premium"
         component={TabTwoNavigator}
-        // options={{
-        //   tabBarIcon: ({ color }) => <FontAwesome5 name="spotify" size={30} style={{ marginBottom: -3 }} color={color} />,
-        // }}
+        options={{
+          tabBarIcon: ({ color }) => <FontAwesome5 name="spotify" size={30} style={{ marginBottom: -3 }} color={color} />,
+        }}
       />
     </BottomTab.Navigator>
   );
